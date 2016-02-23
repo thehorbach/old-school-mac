@@ -23,13 +23,31 @@ class ViewController: UIViewController {
         
         mainLbl.text = ""
         
-        for var x = 0; x < phrases.count; x++ {
+       /* for var x = 0; x < phrases.count; x++ {
             var text = mainLbl.text!
             text += phrases[x]
             mainLbl.text = text
         }
+        */
+        
+     
+        /*
+        var x = 0
+        
+        repeat {
+            var text = mainLbl.text!
+            text += phrases[x]
+            mainLbl.text = text
+            x++
+        } while x < phrases.count
+        */
         
         
+        for phrase in phrases {
+            var text = mainLbl.text!
+            text += phrase
+            mainLbl.text = text
+        }
     }
 
     override func didReceiveMemoryWarning() {
